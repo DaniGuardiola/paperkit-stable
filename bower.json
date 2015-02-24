@@ -1,6 +1,6 @@
 {
   "name": "paperkit",
-  "version": "0.0.2-2",
+  "version": "0.0.2",
   "main": [
     "paperkit.css",
     "paperkit.js"
