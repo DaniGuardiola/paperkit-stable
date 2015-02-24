@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       // Shell tasks
       exec: {
         stageAll: {
-          command: 'git add . --all && git reset -- bower.json && git commit -m "New release" --allow-empty && git push -q'
+          command: 'git tag -l | xargs git tag -d && git fetch && git add . --all && git reset -- bower.json && git commit -m "New release" --allow-empty && git push -q'
         }
       }
   });
